@@ -1,0 +1,94 @@
+Comandos de búsqueda
+Estos nos ayudan a buscar archivos o directorios (se pueden filtrar) dependiendo su extensión, nombre, ubicación, etc.
+
+.log
+Son archivos de texto plano que recopilan normalmente la información de un archivo en ejecución.
+
+Por ejemplo cuando Google Chrome se está ejecutando crea un archivo .log para ver las páginas que visitamos, si hay errores en el sistema, etc.
+
+Estos archivos llegan a ser molestos y hay que borrarlos.
+
+Buscar archivos .log en la terminal
+$ find [punto de partida] -type f -name *.log
+
+which
+Nos ayuda buscar la ruta de nuestros binarios, lo busca en toda la ruta del path.
+
+$ witch [comando o ejecutable]
+find
+Nos permite encontrar un archivo, lo primero que recibe es la ruta desde donde va a buscar el archivo.
+
+El comando find es uno de los más versátiles que podemos encontrar en la terminal, a través de sus diferentes opciones podemos realizar diferentes tipos de búsquedas.
+
+Tiene una opción especial que es exec una vez terminada la búsqueda, nos permite ejecutar un comando.
+
+Funciona bien el shell bash tal como en la clase en zsy hay que colocarle '' a lo que tratamos de buscar.
+
+En caso de que no funcione el comando tratemos de colocarle comillas simple a lo que se está buscando
+
+$ find [punto de partida] [opcion] [archivo o directorio]
+$ find [punto de partida] [opcion] '[archivo o directorio]'
+-name: Va a buscar por nombre.
+
+Ejemplo
+
+$ find . -name file
+Wildcards
+$ find . -name *.txt 
+Pipes operator
+$ find . -name *.txt | less
+Operadores
+-type: Busca por tipos y este tiene dos argumentos.
+
+f: Solamente busca files o archivos.
+
+d: Solamente busca directorios.
+
+$ find [punto de partida] -type [argumentos de type] [opcion] [archivo o directorio]
+
+#Ejemplo
+$ find . -type d -name Platzi
+-size: Busca por tamaño de archivo.
+
+$ find [punto de partida] -size tamaño
+
+#Ejemplo
+$ find . -size 20M
+Les comparto mis apuntes del mismo curso pero del 2019
+locate
+Es una herramienta que nos permite hacer una búsqueda en todo nuestro sistema de archivos simplemente diciendo el nombre de un archivo que buscamos.
+
+Instalar locate
+$ sudo apt install mlocate # si no funciona usamos solamente "locate" en vez de "mlocate"
+Actualizar la base de datos
+locate funciona mediante una base de datos que tiene que ser explícitamente actualizada periódicamente, caso contrario los archivos no se encuentran.
+
+$ sudo updatedb
+Usando locate
+locate archivoABuscar
+whereis
+Este se usa para ubicar archivos binarios o sea comandos.
+
+$ whereis comando
+Nos muestra la ruta en donde se ubica el comando que buscamos también podemos encontrar las máquinas del manual del comando.
+
+find
+Lo que hace es buscar dentro de un árbol de directorios, de donde le indiquemos que comience, utilizando una serie de criterios.
+
+-perm xxx: quiere decir con los permisos xxx.
+
+$ find lugarDeBusqueda -user nombreDelUsuario -perm permisosEnNumeros
+
+# Ejemplo
+find . -user galeedgutierrez -perm 700
+Este ejemplo que acabamos de ver nos muestra los archivos que pertenezcan al usuario X, ubicados en cierto directorio con los permisos que le indiquemos.
+
+Buscar solamente archivos
+-type f: quiere decir que solo busque archivos.
+
+-mtime Xtime: quiere decir cierta cosa que se halla modificado en un tiempo X.
+
+$ find lugarDeBusqueda -type f -mtime tiempoEnDias
+Hacer algo con los archivos encontrados ejemplo
+$ find . -type f -mtime +7 -exec cp {} ./backup/ \;
+Este comando copia todos los archivos encontrados, cuya última modificación fue hace más de 7 días, al directorio backup.
