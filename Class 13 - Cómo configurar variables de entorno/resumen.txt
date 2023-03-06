@@ -1,0 +1,93 @@
+Clase 13 – Cómo configurar variables de entorno
+¿Para qué nos sirven las variables de entorno?
+
+Para hacer que alguna información prevalezca para que podamos trabajar más rápido y no tener que recordarla en todo momento.
+Hacer configuraciones globales.
+¿Qué podemos entender como un link simbólico?
+
+Como un acceso directo a algún directorio desde la terminal.
+¿Cómo podemos crear un link simbólico?
+
+Con el comando:
+ln -s ruta nombre-link
+¿Un link simbólico da todos los permisos a los diferentes roles que podemos tener en Linux?
+
+Aunque veamos que todos los permisos estén dados, esto no significa que de verdad todos los roles tengan todos los permisos para el link simbólico. Esto es porque los permisos que vemos no tienen ningún valor.
+¿Para qué nos sirve el comando printenv?
+
+Para imprimir en la pantalla todas las variables de entorno de nuestros sistema operativo Linux.
+¿Cómo podemos imprimir el contenido de una variable de entorno desde la terminal?
+
+Escribiendo:
+echo $NOMBRE-VARIABLE
+¿Los nombres de las variables de entorno están en mayúscula?
+
+Sí.
+¿Qué variables de entorno importantes deberíamos de conocer?
+
+HOME
+PATH
+BASH_VERSION
+SHELL
+¿Para qué nos sirve la variable de entorno HOME?
+
+Para saber la dirección de nuestro home.
+¿Para qué nos sirve la variable de entorno PATH?
+
+Para saber las direcciones de nuestros binarios que usa el sistema.
+¿Por qué la variable de entorno PATH es importante?
+
+Porque es muy posible que necesitemos las rutas de dichos binarios para trabajar con manejadores de paquetes y algunos lenguajes de programación.
+¿Para qué nos sirve la variable de entorno BASH_VERSION?
+
+Para saber la versión del bash que estamo usando.
+¿Para qué nos sirve la variable de entorno SHELL?
+
+Para saber la dirección de la Shell que se esté usando.
+¿En dónde podemos configurar nuestras variables de entorno?
+
+Esto depende del sistema operativo
+Linux: en el archivo .bashrc
+Mac: en el archivo .zshrc
+¿Cómo podemos abrir los archivos bashrc o zshrc con Visual Studio Code?
+
+Escribiendo:
+code .bashrc
+code . zsgrc
+¿Qué cosas podemos hacer dentro el archivo bashrc o zshrc a parte de configurar nuestras variables de entorno?
+
+Crear alias que permanezcan para siempre en nuestro sistema operativo.
+¿Cómo sería la sintaxis para crear una variable de entorno desde los archivos bashrc o zshrc?
+
+	NOMBRE-VARIABLE=“valor”
+¿Qué debemos hacer cuando editamos los archivos bashrc o zshrc?
+
+Cargar la bash.
+¿Cómo cargamos la bash?
+
+Con el comando bash.
+¿Cómo podemos agregar contenido a la variable de entorno PATH?
+
+Escribiendo:
+PATH=$PATH: ‘nuevo-contenido’
+¿Deberíamos crear alias de comandos que ya existen?
+
+No.
+
+
+Variables de entorno.
+
+La termina tiene una configuración con diferentes valores, que se pueden acceder con las variables de entorno. Estas son muy importantes para la configuración general del sistema 🚒.
+Podemos guardar alias para que se queden de manera permanente con esto 😉.
+ln -s <ruta> <Nombre> Esto para hacer link simbólicos, que son un tipo de archivo que hacen referencia a otro lugar, básicamente es un acceso directo desde terminal 📁.
+printenv nos muestra todas las variables de entorno que tenemos configuradas 📔.
+echo $<variables> esto nos sirve para imprimir una variable en particular.
+Algunas variables son:
+HOME es nuestro HOME de usuario 😆.
+PATH tiene todas las rutas donde se encuentran los binarios en los que se ejecuta nuestro sistema. 🛣️ Hay varios manejadores de paquetes para binarios, pero no todas las veces se agregan a PATH, y se deben agregar a mano.
+En HOME, existe un archivo que se llama .bashrc que es donde está nuestra configuración de Bash. Lo podemos abrir con VS Code para modificarlo. En este archivo podemos crear alias.
+alias <nombre>="comando" para crear un alias útil 👀.
+code <archivo> para abrir un archivo de texto en VS Code desde la terminal.
+Para modificar o crear una variable de entorno, se hace, por ejemplo PLATZI_MESSAGE='Hola amigos".
+Para agregar una ruta a la variable PATH ponemos en .bashrc PATH=$PATH:<ruta>, guardamos, cargamos bash en la terminal, y listo 😄.
+Es muuuy importante tener cuidado con los alias, nunca hay que nombrar un alias como un comando ya existente 😟.
