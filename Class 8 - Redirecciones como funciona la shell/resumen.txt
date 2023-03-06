@@ -1,0 +1,69 @@
+Clase 8 – Redirecciones: cómo funciona la Shell
+¿Qué necesitamos entender para poder manejar las redirecciones?
+
+Debemos aprender a manipular las entradas y salidas de los comandos, por medio de unos operadores especiales.
+¿Cuáles son las partes que conforman el ciclo de ejecución de un comando?
+
+Standart input - stdin
+Comando
+Standart output - stdout
+Standart error - stderr
+¿Qué es standart input?
+
+Representa las entradas realizadas por medio del teclado.
+¿Podemos redirigir el standart input a archivos de texto?
+
+Si.
+¿Cómo describe la terminal al standart input?
+
+Con un número 0
+¿Cómo conocemos a los números con los que identifica la terminal al Estándar input, output y error?
+
+File Descriptor.
+¿En dónde entra el Standart input en la terminal?
+
+Al comando.
+¿Cuáles son las posibilidades que podemos obtener al ejecutar un comando?
+
+Standart output.
+Standart error.
+¿Qué es standart output?
+
+Una salida que obtenemos al ejecutar un comando de manera correcta.
+¿Qué es Standart error?
+
+Un error que obtenemos al ejecutar un comando de manera errónea.
+¿Con que números interpreta la Shell a standart output y el standart error?
+
+Output – 1
+Error – 2
+¿Cómo puedo guardar el contenido de un directorio en un archivo de texto?
+
+Podemos usar el comando ls nombre-directorio > nombre-archivo:
+ls ejercicios > contenido.txt
+¿Qué pasa cuando redireccionamos el contenido de un directorio a un archivo que no existe?
+
+Automáticamente el archivo se creará.
+¿Cuándo enviamos el contenido de un directorio a un archivo de texto plano a qué nos referimos?
+
+Lo que realmente enviamos no son los archivos, sino enviamos los nombres de los archivos que están contenidos en el directorio.
+¿Cuándo enviamos nuevo contenido de un directorio a un archivo de texto qué le pasa al contenido previamente almacenado en dicho archivo?
+
+Este se sobrescribe, eliminando el contenido viejo y únicamente guardando el nuevo.
+¿Cómo podemos concatenar contenido viejo de un directorio con uno nuevo al enviarlo a un archivo de texto?
+
+Podemos hacerlo con el comando ls directorio-nuevo >> nombre-archivo:
+ls download >> contenido.txt
+¿Cómo le indicamos a la terminal que lo que queremos redireccionar es el estándar output?
+
+Con el operador >
+¿Cómo le indicamos a la terminal que lo que queremos redireccionar es el estándar error?
+
+Con el operador 2>
+¿Cómo podemos redirigir el Standart output y el Estándar error a un archivo de texto al mismo tiempo?
+
+Lo podemos hacer con el comando:
+ls comando > nombre-archivo 2>&1
+¿Por qué son útiles las redirecciones?
+
+Porque cuando estamos ejecutando un Script (código) y queremos tener un registro de todo el proceso es muy bueno reenviar esto a un archivo ya que de esta manera tendremos de una manera tangible los posibles errores que aparezcan en su ejecución.

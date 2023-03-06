@@ -1,0 +1,10 @@
+Wildcards
+
+▪ ls *.txt: Muestra todos los archivos que terminen en .txt
+▪ ls parámetro* : Muestra todos los archivos que coincidan con el parámetro buscado.
+▪ ls parámetro? : Muestra los archivos que solo tengan un solo carácter después del parámetro buscado, si se usan más signos de interrogación buscara solo lo que coincidan con la búsqueda, ejemplo: parametro??? Se traerá el parámetro más los siguientes tres caracteres que acompañen el nombre del archivo.
+▪ ls [[:upper:]]* : busca todos los archivos y directorios que comienzan mayúscula y tengan una sucesión de caracteres.
+▪ ls -d [[:upper:]]* : busca solo los directorios que comienzan con mayúscula y tengan una sucesión de caracteres.
+▪ ls [[:lower:]]* : busca todos los archivos y directorios que comienzan con minúscula y tengan una sucesión de caracteres.
+▪ ls -d [[:lower:]]* : busca solo los directorios que comienzan minúscula y tengan una sucesión de caracteres.
+▪ Ls [ad]* : Funciona para hacer una búsqueda por caracteres muestra todos los archivos que comienzan con a con d en este caso.

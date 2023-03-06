@@ -1,0 +1,40 @@
+Clase 8 – Redirecciones: pipe operator
+¿Para qué nos sirve el Pipe operator?
+
+Nos permite tomar la salida de un comando y pasarla como entrada a otro comando.
+¿Para qué sirve el comando echo?
+
+Para imprimir en pantalla un mensaje.
+¿Cómo es la sintaxis del comando echo?
+
+Echo “mensaje”
+¿Para qué nos sirve el comando cat?
+
+Para concatenar o unir el contenido de dos o varios archivos al mismo tiempo.
+¿La redirección input es comúnmente usada?
+
+No, esta solo se usa en casos concretos.
+¿Cuál es el símbolo que simboliza al pipe operator?
+
+|
+¿Cuál es la diferencia entre el pipe operator y la redirección?
+
+Con el pipe operator podemos únicamente pasar temporalmente el standart outputa como standart input, mientras que con la redirección podemos guardar el resultado en un archivo.
+¿Cómo podemos guardar el resultado de un pipe operator?
+
+Usando el comando tee.
+¿Cuál sería la sintaxis de un pipe operator y el comando tee?
+
+Comando instrucción | tee nombre archivo | comando
+¿Para qué nos sirve el comando sort?
+
+Para organizar alfabéticamente el resultado de usar un comando como ls.
+¿Para qué nos sirve el comando cowsay?
+
+Nos sirve para imprimir un mensaje con una vaca dibujada.
+¿Para qué nos sirve el comando lolcat?
+
+Para imprimir un mensaje de diferentes colores cada vez que lo ejecutemos.
+¿Existen ocasiones en las que el pipe operator y el comando tee no podrán guardar de manera correcta el estándar output en un archivo?
+
+Sí.

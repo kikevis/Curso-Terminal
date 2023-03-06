@@ -1,0 +1,36 @@
+EXPLORANDO EL CONTENIDO DE NUESTROS ARCHIVOS
+📘🖋
+• Nos muestra las primeras 10 líneas de nuestro archivo
+
+head principios_de_usabulidad.md
+
+• Si deseo visualizar más líneas (ejemplo 15 lineas)
+
+head principios_de_usabulidad.md -n 15
+
+• Nos muestra las ultimas 10 líneas de nuestro archivo
+
+tail principios_de_usabulidad.md
+
+• Si deseo visualizar las ultimas 15 líneas (ejemplo 15 lineas)
+
+tail principios_de_usabulidad.md -n 15
+
+• otro comando de exploración de texto (conveniente)
+
+less principios_de_usabulidad.md
+
+nos permite navegar mejor en nuestro archivo. Ejemplo
+• Para encontrar una palabra clave dentro de nuestro archivo usas ( / )
+
+/ flexibilidad
+
+Para salir de esta exploración solo hay que presionar “q”
+• Para abrir el archivo con una app desde la terminal
+
+xdg-open principios_de_usabulidad.md
+
+Para terminar el proceso ejecutado presiona ctrl + c
+• Abrir todo el sistema de archivos
+
+nautilus Documents/Dev

@@ -1,0 +1,39 @@
+Comandos usados hasta ahora
+
+▪ ls : para mostrar la lista de archivos y directorios.
+▪ ls -l: Muestra más información de los archivos.
+▪ ls -lh: Muestra información más entendible para los humanos.
+▪ cd: Para cambiar de directorio.
+▪ clear: Para limpiar la consola o ctrl + l.
+▪ cd: Nos lleva al home directamente.
+▪ pwd: nos muestra la ruta donde estamos.
+▪ ctrl + shift + c: copiar texto de la terminal.
+▪ file nombre_del_archivo:  Para saber el tipo de archivo
+▪ ls -la: muestra todos los archivos incluyendo los ocultos.
+▪ ls -lS: Ordena los archivos por tamaño
+▪ ls -lr: Los ordena al contrario del orden alfabético
+▪ tree: Despliega todos los archivos como si fueran un árbol.
+▪ tree -L (número de niveles en los que se quiere profundizar) 
+▪ mkdir: Crear un directorio, con comillas se puede crear un directorio con espacio
+▪ touch: crear un archivo 
+▪ cp nombre_del_archivo (nuevo nombre de la copia): Para copiar un archivo 
+▪ mv nombre_del_archivo .. : mover archivo al directorio anterior 
+▪ mv nombre_del_archivo renombre_del_archivo: También sirve para renombrar.
+▪ rm nombre_del_archivo: eliminar el archivo.
+▪ rm -(guion largo posiblemente) nombre_del_archivo: pregunta si de verdad se quiere eliminar el archivo.
+▪ rm -ri: nombre_del_directorio: Sirve para eliminar un directorio de forma interactiva.
+▪ rm -rf: Borrar sin importar las consecuencias.  
+▪ head nombre_del_archivo: Nos muestra las primeras 10 líneas de éste
+▪ head nombre_del_archivo -n numero_de_lineas: muestra el número de líneas que quieras ver.
+▪ tail nombre_del_archivo: Muestra las ultimas 10 líneas 
+▪ tail nombre_del_archivo -n numero_de_lineas: muestra el número de las ultimas líneas que quieras ver.
+▪ less nombre_del_archivo: Muestra el archivos de forma más dinámica, además podemos utilizar el slash( / ) seguido de la palabra a buscar, para hacer búsquedas dentro del archivo, para salir de la "interfaz" presionamos la letra "q".
+▪ open nombre_del_archivo: Abrir archivos solo para MAC
+▪ xdg-open: Para abrir archivos con un editor de texto predeterminado
+▪ Ctrl + c:  para terminar con cualquier proceso
+▪ type cualquier_comando: Nos muestra de que tipo es nuestro comando
+▪ alias alias ="comando_original": Se crea un apodo, sinónimo o alias del comando original solo serán accedidos mientras no cierres la ventana de comandos.
+▪  comando --help: Sirve para pedir ayuda sobre los comandos
+▪ man comando: Hace referencia al manual de usuario de un comando.
+▪ info comando: También sirve para ver información de un comando.
+▪ Whatis comando: Nos da una descripción corta de lo que hace el comando aunque no funciona con todos los comando.

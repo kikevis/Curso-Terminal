@@ -1,0 +1,8 @@
+Explorando el contenido de nuestro archivos.
+
+Podemos explorar el contenido de archivos sin la necesidad de abrirlos, desde la terminal 🧐. Esto para archivos de texto.
+head <documento de texto>: Nos muestra las primeras 10 líneas de un archivo de texto. Para especificar el número de líneas head -n <numero de lineas> <archivo>
+tail <documento>: Nos muestra las últimas 10 líneas.
+less <archivo>: Este es muy cool, es muy interactivo, nos permite hacer scroll, y nos permite hacer búsquedas haciendo /<palabra a buscar>. Para salir presionamos q 🔍.
+xdg-open <archivo>: Para abrir un archivo desde la terminal. Usa las aplicaciones predeterminadas. Esto para linux, para mac, es open. Esto crea un proceso en la terminal que no nos dejará hacer nada mas. Para terminar el proceso ctrl+c.
+nautilus nos permite abrir el explorador de archivos en una posición dada (en linux) 📁

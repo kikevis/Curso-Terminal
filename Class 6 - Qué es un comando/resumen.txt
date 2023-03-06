@@ -1,0 +1,78 @@
+Clase 5 - ¿Qué es un comando?
+¿Qué puede ser un comando?
+
+Un programa ejecutable.
+Un comando de utilidad de la Shell.
+Una función de la Shell.
+Un alias.
+¿En dónde se guardan los programas ejecutables en Linux?
+
+En la ruta /usr/bin
+¿A que nos referimos cuando hablamos de un comando de utilidad de la Shell?
+
+Nos referimos a los comandos que ya vienen por defecto en nuestra Shell.
+¿A que nos referimos cuando hablamos de una función de la Shell?
+
+Nos referimos a los comandos que no vienen por defecto en nuestra Shell.
+¿Qué es un alias?
+
+Es un comando que nos sirve para almacenar otro comando y poder ejecutarlo solamente con el alias que le asignemos.
+¿Para qué nos sirve el comando type comando?
+
+Para saber qué tipo de comando es el que escribimos posterior al comando type:
+type comando-a-indagar
+¿Qué tipo de comando es el comando cd?
+
+Comando de utilidad de la Shell.
+¿Qué tipo de comando es el comando mkdir?
+
+Un programa ejecutable.
+¿Qué tipo de comando es el comando ls?
+
+Un alias.
+¿el comando ls es alias de qué comando?
+
+Del comando ls --color=auto
+¿podemos escribir funciones de comandos con palabras completas?
+
+Si.
+¿Los comandos con palabras completas pueden llevar parámetros?
+
+Si.
+¿Cómo podemos escribir un comando con una opción de palabras completas?
+
+Escribiendo al principio de la opción dos guiones (–).
+¿Cómo podemos crear alias?
+
+Con el comando alias. Seguido del comando escribimos el alias que vamos a usar, seguido escribimos un símbolo de igual (=) y entre comillas escribimos el comando al que le queremos asignar el alias:
+alias nombre-alias=comando-al-que-apuntamos
+¿Los alias son permanentes?
+
+No.
+¿Para qué nos sirve el comando help?
+
+Este comando nos permite saber cómo funciona otro comando. Para usar este debemos escribir seguido del comando help, el comando que queremos indagar:
+help comando-a-indagar
+¿Como podemos saber cómo funciona un comando sin usar el comando help?
+
+Escribiéndole al comando que queremos investigar la opción de palabra
+–help.
+¿El comando help puede funcionar en todas las Shell?
+
+No.
+¿Para qué nos sirve el comando man?
+
+Para desplegar el manual de usuario de algún comando:
+man comando-a-indagar
+¿Todos los comandos tienen un manual de usuario?
+
+No.
+¿Para qué nos sirve el comando info?
+
+Para desplegar un manual de usuario de algún comando, pero de manera más resumida y con una interfaz un poco diferente a la del comando man.
+¿El comando info funciona con todos los comandos?
+
+No.
+¿Para qué nos sirve el comando whatis?
+
+Para saber de manera super resumida que hace un comando.
