@@ -1,0 +1,26 @@
+Modificando permisos en la terminal.
+
+Existen diversos usuarios con permisos cada uno; el usuario root es especial y puede hacer de todo🚶🏽.
+Puedes crear archivos de texto también con > archivo.txt y también podemos editarlo con cat > archivo.txt 📜
+En un archivo, se muestran: [tipo de archivo][rwx usuario][rwx grupo][rwx mundo], por ejemplo, -rw-r--r-- mitexto.txt 👀.
+chmod <permiso en octal para usuario><para grupo><para mundo> <archivo> change mode nos sirve para cambiar los permisos de un archivo. Si hacemos por ejemplo chmod 755 mitexto.txt tendremos ahora -rwxr-xr-x mitexto.txt, esto no cambia para nada el contenido del archivo.
+Para quitarle los permisos a alguien en particular, usamos el modo simbólico y usando laresta, por ejemplo quitando el permiso de lectura al usuario chmod u-r mitexto.txt. Para agregar, se usa la suma. 🧮
+Podemos hacer configuraciones mas avanzadas, por ejemplo, podemos asignar varios permisos al mismo tiempo chmod u-x,go=w mitexto.txt.
+whoami Para saber que usuario somos, y también podemos obtener el ID del usuario con id.
+su root para cambiar de usuario hacía root, hay que tener cuidado al usar este usuario 😟. Su home es incluso distinto. Los archivos que crea root (o otro usuario) no se pueden eliminar por un usuario normal.
+sudo <comando> nos otorga temporalmente los permisos de root para ejecutar algún comando que ocupe permisos especiales. 🦸🏽 Nunca dejes el usuario root por defecto, y ponle una contraseña distinta!!
+
+
+Podemos otorgar y quitar permisos de la terminal con los valores octales y los valores simbólicos. Por ejemplo:
+
+chmod u-r -> Le quitamos al usuario el permiso de leer el archivo.
+chmod u+r -> Le otorgamos al usuario el permiso de leer el archivo.
+Un comando un poco más avanzado:
+
+chmod u-x,go=w mitexto.txt -> Al usuario le quitamos el permiso de ejecución, al grupo y others le dimos el permiso de write.
+
+El comando whoami nos ayudará para saber quién somos, por si tenemos dudas existenciales en la terminal.
+
+Podemos cambiar de usuario con su nombreDeUsuario, por ejemplo su root
+
+El famoso comando sudo nos dará los permisos de root a nuestro usuario normal y la contraseña que pedirá para ejecutar los comandos es de nuestro usuario normal.

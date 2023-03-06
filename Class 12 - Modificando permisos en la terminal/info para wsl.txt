@@ -1,0 +1,18 @@
+chmod doesn’t change file permissions:
+Si resulta que tu aplicas -( chmod 755 mitexto.txt )-
+pero no cambia en nada los permisos o los cambia pero no lo que deseas, es un error que suele aparecer para las personas que usamos WSL(Ubuntu), nuestro sistema Windows no le da todos los permisos a nuestro terminal que trabaja con Linux. Por lo tanto, no podrás hacer estos cambios o trabajar al 100%.
+Lo que puedes hacer, para seguir trabajando con el profesor y todo funcione bien, es trabajar en la ubicación de origen de nuestro home:
+Te diriges a este usando cualquiera de estos 2 comandos:
+
+cd
+cd ~
+Una vez te encuentres ahí, creas la misma carpeta, archivo y ello. Vuelves a realizar los comandos que el profesor usó y esta vez si te funcionará al 100%, porque este “home” se encuentra muy aparte de Windows, es como tu Linux puro, pero aparte.
+Espero y les halla servido, me tarde como 1 hora buscando la posible falla y valió la pena 😃
+
+** 😃 Nunca te rindas, persiste hasta encontrar lo que buscas y así nunca pararás de aprender 😃**
+
+
+Para ingresar al usuario root con WSL o ubuntu:
+sudo -i : Forma interactiva de entrar al root y posicionarse en la ruta /root , para salir escribimos exit.
+sudo su : Entramos al usuario root y nos posicionamos en la misma ruta desde la que entramos.
+sudo su root : Funciona igual que sudo su.
