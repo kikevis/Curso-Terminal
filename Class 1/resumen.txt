@@ -1,0 +1,69 @@
+Clase 1 – ¿Qué es la terminal?
+¿La terminal es una herramienta indispensable para toda persona que quiera dedicarse a desarrollar software?
+
+Si.
+¿Por qué debería aprender a manejar la terminal?
+
+Por su flexibilidad.
+Su Velocidad.
+No siempre contamos con una interfaz gráfica
+Podemos invocar demonios.
+¿Por qué la terminal es flexible?
+
+Porque cuando ejecutamos los comandos de manera correcta podemos hacer procesos de manera eficaz.
+¿Por qué la terminal es rápida?
+
+Porque realizar acciones como copiar, crear o mover archivos y carpetas es más rápido desde la terminal a diferencia de una interfaz gráfica.
+¿Qué es una interfaz gráfica?
+
+Es una ventana que nos proporcionan algunos sistemas operativos para que podamos realizar operaciones de manera amigable y sencilla.
+¿Por qué es importante aprender a manejar la Terminal cuando no tenemos una interfaz gráfica?
+
+La interfaz gráfica puede fallar.
+Mayor certeza de que lo que se está haciendo funciona correctamente.
+Existen casos muy concretos en los que sí o sí debemos usar la línea de comandos.
+¿En qué caso debemos usar sí o si la terminal?
+
+Configurar un servidor remoto.
+¿Por qué podemos invocar demonios si no aprendemos a usar la terminal?
+Porque si no sabemos cómo usarla correctamente podemos causar grandes daños a nuestro trabajo o al de los demás.
+¿Qué es la terminal?
+
+Es una interfaz gráfica que simula una línea de comandos.
+¿A qué nos referimos cuando hablamos de una línea de comandos?
+
+A una Shell.
+¿Qué es el prompt de la terminal?
+
+Es la barra que parpadea dentro de la terminal.
+¿Qué aloja la terminal?
+
+Una Shell o línea de comandos.
+¿Qué es una línea de comandos o Shell?
+
+Es un programa que toma los comandos y los pasa al sistema operativo para que haga algo.
+¿Qué tipos de Shell existen?
+
+Bourne Shell.
+Bash Shell.
+Z Shell.
+C Shell.
+Korn Shell.
+Fish Shell.
+PowerShell.
+¿Cuál es la Shell de Windows?
+
+PowerShell.
+¿Cuáles son las Shell más comunes?
+
+Bash Shell.
+Z Shell.
+¿Cuál es la Shell por defecto de una Mac?
+
+Shell.
+Cuál es la Shell por defecto de Linux?
+
+Bash Shell.
+Qué es un comando de manera sencilla?
+
+Es un programa que podemos ejecutar desde la terminal, el cual recibe parámetros y opciones.

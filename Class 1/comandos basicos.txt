@@ -1,0 +1,36 @@
+Comandos básicos de Linux
+
+comando pwd
+comando cd
+comando ls
+comando cat
+comando cp
+comando mv
+comando mkdir
+comando rmdir
+comando rm
+comando touch
+comando locate
+comando find
+comando grep
+comando sudo
+comando df
+comando du
+comando head
+comando tail
+comando diff
+comando tar
+comando chmod
+comando chown
+comando jobs
+comando kill
+comando ping
+comando wget
+comando uname
+comando top
+comando history
+comando man
+comando echo
+comando zip, unzip
+comando hostname
+comando useradd, userdel
