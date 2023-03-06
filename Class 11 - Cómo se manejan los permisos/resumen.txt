@@ -1,0 +1,34 @@
+Manejar Permisos.
+
+Los archivos tienen persmisos de acceso según qué usuario intentente acceder a este, estos son:
+
+Read ® → posisbilidad de leer el documento
+Write (w) → posibilidad de escribir (modificar) el ducumento
+eXecute (x) → posibilidad de ejecutar el documento
+.
+Modo octal:
+Read, write y execute (wrx) representan los permisos de un archivo, estos se pueden representar en sistema binario (en ese orden) según el permiso esté habilitado o no, así 101 representa r-x, a la vez este número binario se puede representar en número natural del 0 al 8 (de allí el nombre)
+.
+Ejemplos:
+
+7 → 111 → wrx
+4 → 100 → r–
+1 → 001 → --x
+5 → 101 → r-x
+.
+Estos permisos se aplican a tres usuarios:
+
+user (u) → usuario o dueño
+group(g) → grupo (entorno del dueño)
+other(o) → world, cualquier otro usuario
+Nota:
+
+Se puede acceder a los tipos de usuario con el modo simbolico (u,g,o), además del modo a (all, todos los usuarios)
+.
+Tipos de archivos:
+Al momento de consultar los permisos (ls-l) también accedemos a el tipo de archivo, que puede ser:
+
+→ archivo normal
+d → directorio
+l → link simbolico
+b → archivo de bloque especial (guarda información de un dispositivo de almacenamiento externo)
