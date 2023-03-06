@@ -1,0 +1,88 @@
+Clase 3 – Manipulando archivos y directorios
+¿Para qué nos sirve el comando ls -al?
+
+Lista nuestros archivos y directorios incluidos los ocultos.
+¿Cómo sabemos que un archivo o directorio es oculto?
+
+Cuando tiene un punto (.) antes del nombre de dicho archivo o directorio:
+.nombre-directorio o .nombre-archivo
+¿Para qué nos sirve el comando ls -lS?
+o Nos lista nuestros archivos y directorios del más pesado al más liviano.
+
+¿Para qué sirve el comando ls -lr?
+
+Para listar nuestros archivos y directorios de manera alfabética, pero de la Z a la A.
+¿Para qué nos sirve el comando tree?
+
+Nos despliega todos nuestros directorios con su contenido a manera de árbol.
+¿En caso de no tener instalado el comando tree como lo puedo instalar?
+
+$ sudo pacman -S tree # Arch Linux
+$yum install tree -y #Centos y Fedora
+$ sudo apt-get install tree # Ubuntu
+$ sudo aptitude install tree # Debian
+Omitir el numeral y el nombre de la distribución.
+¿Para qué nos sirve el comando tree -L 2?
+
+Esto nos permite desplegar nuestros directorios con su contenido, pero únicamente profundizando en 2 niveles.
+¿Para qué nos sirve el comando mkdir?
+
+Para crear directorios. El nombre del directorio va seguido del comando:
+mkdir dir1
+¿Se recomienda que creemos directorios en el que su nombre tenga espacios?
+
+No.
+¿Cómo podemos crear directorios que en su nombre contenga espacios?
+
+Usamos el comando mkdir y el nombre de este lo encerramos en comillas dobles.
+¿Por qué no se recomienda que creemos directorio que tengan en su nombre espacios?
+
+Porque no podemos manipularnos de manera fácil.
+¿Cómo podemos crear un archivo?
+
+Con el comando touch y el nombre del archivo.
+¿podemos crear múltiples archivos y directorios con una sola instrucción?
+
+Si.
+¿Para qué nos sirve el comando cp?
+
+Para copiar archivos.
+¿Cómo podemos usar el comando cp?
+
+Luego de que escribamos el comando debemos escribir el nombre del archivo que queremos copiar y luego el nombre que tendrá el nuevo archivo copia:
+cp archivo-original archivo-copia
+¿Qué pasa si no escribimos una ruta cuando copiamos un archivo?
+
+La copia se creará en el directorio en el que nos encontramos actualmente.
+¿Para qué nos sirve el comando mv?
+o Para mover archivos y directorios.
+
+¿Cómo funciona el comando mv?
+
+Luego de que escribamos el comando mv debemos escribir el nombre del directorio o archivo que queremos mover y seguido la ruta al lugar en donde queremos mover dicho archivo o directorio:
+mv archivo-a-mover destino-a-mover
+¿podemos renombrar archivos y directorios con el comando mv?
+
+Escribiendo el comando mv seguido el archivo o directorio que queremos renombrar y seguido el nuevo nombre.
+¿Para qué nos sirve el comando rm?
+
+Para eliminar archivos.
+¿Cómo funciona el comando rm?
+
+Escribimos el comando rm seguido de este escribimos el nombre del archivo que queremos eliminar:
+rm archivo-a-eliminar
+¿Para qué nos sirve el comando rm -i archivo-a-eliminar?
+
+Este comando nos permite eliminar archivos, pero agregándole una opción interactiva. Esta función hará que la Shell nos pregunte si de verdad queremos eliminar el archivo.
+¿Cómo podemos confirmar la eliminación de un archivo con el comando rm -i archicho-a-eliminar?
+
+Cuando se nos pregunte debemos escribir la letra “y”.
+¿el comando rm funciona para eliminar directorios con archivos?
+
+No.
+¿Cómo podemos eliminar directorios que tengan elementos dentro de él?
+
+Lo hacemos con el comando rm -r nombre-directorio.
+¿Para qué nos sirve el comando rm -rf nombre-directorio?
+
+Para borrar un directorio por la fuerza.

@@ -1,0 +1,12 @@
+ls lista los archivos
+ls -lh lista los archivos de forma más humana
+cd change directory, cambia de directorio
+clear limpia la pantalla, también podemos usar ctrl + l
+Podemos escribir opciones con -
+Con las arrow de arriba y abajo podemos ver los comandos que hemos usado
+cd sin parámetros nos lleva a home
+pwd nos muestra la ruta del directorio en donde estamos
+Podemos copiar texto con el click derecho o ctrl + shift + c
+Para pegar hacemos ctrl + v
+Con . nos referimos al directorio actual
+Con .. nos referimos al directorio de atrás

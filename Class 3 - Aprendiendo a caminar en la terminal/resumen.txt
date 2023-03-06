@@ -1,0 +1,96 @@
+##Clase 2 – Aprendiendo a caminar en la terminal
+
+¿Qué significa el símbolo /?
+
+Significa el root o raíz de nuestro sistema de archivos.
+¿Qué carpetas podemos encontrar dentro de /?
+
+Etc.
+Dev.
+Home.
+Usr.
+Var.
+¿Cuál es el directorio en la que deberíamos fijarnos más dentro del directorio /?
+
+Home.
+¿Qué almacenamos en la carpeta Home?
+
+Información de nuestros usuarios.
+¿Qué es lo primero que vemos en nuestra terminal?
+
+Nuestro nombre de usuario y seguido de la arroba (@) el nombre del pc.
+¿Cómo conocemos al nombre del pc en la industria?
+
+Hostname.
+¿Cuál es el símbolo que hace referencia a la carpeta Home?
+
+La virgulilla ~.
+¿para qué nos sirve el comando ls?
+
+Para lista archivos o directorios que tengamos dentro del directorio en el que nos encontremos.
+¿La terminal nos ayuda a diferenciar los directorios de los archivos usando colores?
+
+Si.
+¿Para qué nos sirve el comando cd?
+
+Para movernos entre directorios.
+¿El comando cd necesita parámetros?
+
+Si.
+¿Qué parámetros necesita el comando cd?
+
+La ruta al directorio al que nos queremos mover o si el directorio está dentro del directorio en el que nos encontramos, únicamente debemos escribir el nombre de dicho directorio.
+¿Cómo podemos limpiar nuestra consola cuando se llena de mucho texto?
+
+Con el comando:
+Clear.
+Con el atajo de teclado:
+CTRL + L.
+¿Cómo podemos agregarles opciones a los comandos?
+
+Seguido del comando escribimos un guion (-).
+¿Para qué sirve el comando ls -l?
+o- Nos lista los archivos y directorios con detalles como el peso, la fecha y el nombre del directorio en el que nos encontramos.
+
+¿En qué formato nos mutra el comando ls -l el peso de los archivos y directorios?
+
+Bytes.
+¿Cómo podemos acceder a comandos que recientemente usamos?
+
+Con las flechas hacia arriba y abajo del teclado.
+¿Cómo sabe la bash que comandos usamos recientemente?
+
+Esto lo hace por medio de un archivo llamado history que se encuentra en el directorio home.
+¿Cuántos comandos almacena el archivo history?
+
+Los primeros 1000 comandos.
+¿Para qué nos sirve el comando ls -lh?
+
+Nos lista los archivos y directorios con detalles como peso de una manera más humana (kb, mg o gb), fecha y nombre del directorio en el que nos encontramos.
+¿Cómo podemos devolvernos al directorio home sin importar el lugar en donde estemos?
+
+Con el comando cd sin parámetros ni opciones.
+¿Para qué nos sirve el comando pwd?
+o- Para mostrarnos la ruta del directorio en el que nos encontramos.
+
+¿Cuáles son los operadores de rutas relativas y absolutas que podemos usar en la terminal?
+
+Ruta absoluta: toda la ruta hasta llegar al lugar que queremos
+Ruta relativa: un solo punto (.) o dos puntos (…).
+¿Cómo podemos copiar contenido de la terminal?
+
+Clic derecho.
+CTRL + Shift + C.
+**¿Para qué nos sirve el operador de un solo punto (.)? **
+
+Nos sirve para ubicarnos dentro de nuestro directorio actual y movernos desde ese lugar a otro directorio.
+¿Para qué nos sirve el operador de dos puntos (…)?
+
+Para devolvernos un directorio atrás.
+** ¿Para qué nos sirve el comando file?**
+
+Para describir el tipo de archivo. Este comando requiere que escribamos seguido de él el nombre del archivo.
+file nombre-archivo
+¿Cómo podemos autocompletar el nombre de un archivo?
+
+Con la tecla tab.

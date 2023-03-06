@@ -1,0 +1,4 @@
+¿Qué es WSL?
+Windows Subsystem for Linux es una capa de compatibilidad que permite ejecutar programas nativos Linux directamente desde la línea de comandos de Windows. En concreto, WSL permite ejecutar archivos binarios Linux de 64 bits en “Executable and Linkable Format” (ELF) estándar.
+
+El subsistema de Windows para Linux está disponible a partir de la versión Windows 10. Sin embargo, el interés de Microsoft por facilitar a los usuarios de Windows el trabajo con las herramientas de Linux desde el entorno de escritorio habitual se remonta a tiempo atrás: WSL surgió del proyecto “Microsoft Windows Services for UNIX” (SFU / Interix), que a su vez era un eslabón de desarrollo más del subsistema POSIX ya integrado en Windows NT. Este desarrollo continúa con el Windows Subsystem for Linux 2 (WSL2).

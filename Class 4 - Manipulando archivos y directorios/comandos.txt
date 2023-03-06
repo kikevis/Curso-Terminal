@@ -1,0 +1,34 @@
+Comandos
+ls -la: Muestra todos los archivos, incluso archivos ocultos
+
+ls -lS: Muestra los archivos ordenados por tamaños
+
+ls -lr: Muestra los archivos en orden descente alphabeticamente
+
+tree: Muestra todos los archivos en forma de arbol
+
+tree -L 2: Muestra los archivos en forma de árbol, especificamente, dos niveles.
+
+mkdir: Permite crear un directorio. Ejemplo: mkdir miDirectorio
+
+mkdir dir1 dir2 dir 3: ****Permite crear varios directorios
+
+touch: Crear un archivo: Ejemplo: touch miArchivo
+
+touch file1 file2 file2: Permite crear varios archivos
+
+cp: Permite copiar archivos. Ejemplo: cp file1 file_bk
+
+mv: Permite mover un archivo. Ejemplo: mv file_bk …
+
+mv file_bk fileCopy: ****Te permite renombrar un archivo.
+
+rm: Permite borrar un archivo, ejemplo: rm miArchivo
+
+rm -i miArchivo: Permite borrar un archivo de forma interactiva
+
+rm -r: Borra de manera recursiva, ejemplo: rm -r dir1
+
+rm -ri dir1: Borra de manera recursiva e interactiva
+
+rm -rf: Borra de manera recursiva y forzada
