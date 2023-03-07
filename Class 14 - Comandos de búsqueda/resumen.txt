@@ -34,7 +34,7 @@ Ejemplo
 
 $ find . -name file
 Wildcards
-$ find . -name *.txt 
+$ find . -name *.txt
 Pipes operator
 $ find . -name *.txt | less
 Operadores
