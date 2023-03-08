@@ -1,0 +1,24 @@
+¿Cómo manejar procesos?
+Diferencia entre Ctrl + C y Ctrl + Z
+Ctrl + C Lo que hace es que finaliza o mata un proceso.
+Ctrl + Z Lo que hace es que pausa o suspende un proceso con lo que después lo podremos volver a llamar con el comando fg foreground (primer plano) o con el comando bg background (segundo plano)
+Y un ejemplo muy sencillo que les servirá para controlar procesos es el siguiente:
+.
+Crear un listado recursivo (Que liste todos los archivos y directorios)
+Para eso seguimos los sigueintes pasos:
+1.- Primero hacemos el comando cd / para dirigirnos a la raíz de nuestro sistema.
+2.- Después ejecutamos el comando ls -R y comenzará a listar TODO lo que existe dentro de nuestro S.O.
+3.- Ahora lo que hacermos será confirmar lo aprendido, utilizamos Ctrl + C y veremos que se cancela el proceso, pero lo interesante viene cuando hacemos lo siguiente 😄
+4.- Ahora ejecutamos el mismo comando para listar TODO, ls -R y lo detenemos con Ctrl + Z a lo que nos saldrá lo siguiente: [Número del proceso] + Id del proceso + En donde se detuvo el proceso
+Y se verá algo como esto: [1] + 40751 suspended (signal) ls --color=tty -R
+Y repetiremos el paso 4 otras 3 veces (Ustedes confíen 😄)
+Ahora si ejecutamos el comando jobs nos mostrará todos los procesos suspendidos y si tenemos ejecutando alguno en segundo plano.
+Imgur
+Para volver a activar algún proceso podemos hacerlo con el comando fg %Número del proceso
+Por ejemplo en bash con fg %1 y en zsh con fg %1 para volver a correr el primer proceso que suspendimos, y ahora le damos Crl + C para ahora sí matarlo, ahora el proceso 1 ya no existirá al ejecutar jobs pero el 2, 3 y 4 ahí seguirán 😄
+Esto es muy importante para cuando queremos manejar diferentes procesos, por ejemplo con el comando sleep 10000 & podrá un proceso en segundo plano, entonces no lo podremos ver, pero nos marca el Número del proceso entre los [] también lo podemos ver con jobs junto con su número de proceso, si lo queremos traer a primer plano lo podemos hacer con el comando fg %1 por ejemplo y de ahí ya cancelarlo o suspenderlo, o una manera más rápida, solo ejecutar el comando kill %Número del proceso por ejemplo: con el mismo ejemplo de sleep 10000 & si nos da el [1] lo podremos terminar con kill 1 o kill %1 y nos saldrá algo como [1] + 41723 terminated sleep 10000 y ahora ya saber como manejar y exterminar todos los procesos como terminator 🤖
+.
+.
+Diferencia entre Ctrl + L y clear
+Ctrl + L Lo que hace es que manda para arriba lo que está impreso en la terminal, dejándola a simple vista limpia, pero en realidad lo puedes regresar a eso que esta impreso ahí.
+clear Lo que hace es que limpia la terminal, y todo lo que estaba impreso en la terminal.

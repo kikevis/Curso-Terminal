@@ -2,7 +2,7 @@ Comprimiendo archivos.
 
 Podemos crear archivos comprimidos .zip o .tar desde la terminal. 🤖
 .tar se usa mucho en repositorios. Para comprimir tar -cvf <nombre>.tar <archivos>, donde c → compress, v → verbose, f→ file. 📁
-.gz es un poco mejor, se usa el mismo comando pero con la bandera z→zip tar -cvzf <nombre>.gz <archivos>. Usa el algoritmo gzip que es muy eficiente para comprimir. 📄
-Para descomprimirlo, usamos el mismo comando pero con la bandera x → decompress en lugar de c → compress. Para que funcione, debemos descomprimir debemos usar el mismo tipo de compresión (tar o zip). 📖
+.gz es un poco mejor, se usa el mismo comando pero con la bandera z→zip tar -cvzf <nombre>.tar.gz <archivos>. Usa el algoritmo gzip que es muy eficiente para comprimir. 📄
+Para descomprimirlo, usamos el mismo comando pero con la bandera x → decompress en lugar de c → compress. Para que funcione, debemos descomprimir debemos usar el mismo tipo de compresión (tar o zip). 📖 tar -xvzf <nombre>.tar.gz
 .zip es uno muy común. Es necesario instalarlo en linux. zip -r <nombre>.zip <directorio>. Para descomprimir usamos unzip <nombre>.zip. 📃
 .rar funciona igual que .zip, pero con rar y unrar de comandos 👁️‍🗨️.

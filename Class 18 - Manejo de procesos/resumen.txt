@@ -1,0 +1,8 @@
+Manejo de procesos.
+
+Cuando se traba nuestro OS, normalmente terminamos procesos con el administrador de tareas 😆, en la terminal se puede hacer, pero es un poco diferente.
+ps nos muestra los procesos que están corriendo actualmente. Cada proceso tiene un PID. Podemos ver los procesos que estén en el background (por ejemplo, CAT).
+kill <PID> nos ayuda a terminar procesos fuera de nuestra terminal. 🛑
+top <PID> nos muestra los procesos que están usando más recursos de nuestra computadora. Podemos filtrar los procesos (para ver como, usamos bandera h → help). 🆘
+La terminal, sabiéndola usar bien, es más eficiente que el administrador de tareas.
+htop es como top pero con esteroides. Debemos instalarlo. Tiene muchas más opciones 💪🏽
