@@ -1,0 +1,8 @@
+Installar herramientas de red:
+
+sudo apt-get install net-tools
+.
+
+Instalar traceroute:
+
+sudo apt-get install traceroute

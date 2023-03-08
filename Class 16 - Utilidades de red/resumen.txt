@@ -1,0 +1,25 @@
+Utilidades de red.
+
+Existen comandos que nos dan información sobre la red 🥅:
+
+ifconfig: Nos da información general sobre nuestra red 🔍.
+ping <url>: Nos dice si una página está activa a no 🏃🏽. Lo revisa continuamente, y podemos usarla para ver la velocidad de nuestra conexión.
+curl <url>: Nos trae un archivo de texto a través de la red 🌎. (El index.html).
+wget <url>: Web get, trae un archivo de la web, descarga el archivo directamente a nuestra computadora 💻. (El index.html con mejor formato).
+traceroute <url>: Nos da la lista de todas las computadoras (direcciones IP) por la que nuestra conexión pasa para llegar a un sitio web 🚰.
+netstat -i: Nos muestra los dispositivos de red. Similar a ifconfig pero más resumido 👀.
+
+
+Apuntes. Utilidades de red
+
+$ ifconfig // sirve para ver la mascara de red, puerto de transmisión, tarjeta de red, etc
+
+$ ping // nos muestra si una ip o pagina, esta activa, si salen paquetes es porque hay conexión.
+
+$ curl pagina_web// podemos traer el html de una pagina, podríamos guardarlo con el estándar output.
+
+$ wget pagina_web // nos descarga el archivo html, pero con formato.
+
+$ traceroute pagina_web // nos sirve para ver por cuales computadoras tenemos que ir pasando para llegar por ejemplo a una pagina web. Ejemplo, nos saldrán las ip que tenemos que pasar para llegar a la pagina que queremos.
+
+$ netstat –i // nos muestra los dispositivos de red.

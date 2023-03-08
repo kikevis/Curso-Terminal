@@ -1,0 +1,17 @@
+que hace grep
+
+nos permite encontrar encontrar coincidencias en un archivo
+que hace el parámetro -i en grep
+
+ignorá si es mayúscula o minúscula
+que hace el parámetro -v
+
+me trae las coincidencias que no tengan el parámetro dado
+que hace wc
+
+es el comando que nos permite contar la cantidad de palabras, lineas y bits
+como son los parámetros de wc
+
+-l : el numero de líneas
+-w el numero de palabras
+-c el numero de bits
