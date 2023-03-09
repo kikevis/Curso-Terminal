@@ -1,0 +1,18 @@
+Instalar
+sudo apt install zsh
+
+Poner por defecto
+chsh -s $(which zsh)
+
+Oh My Zsh
+Oh My Zsh es lo mejor de Zsh, básicamente es como si a tu terminal le pusieras esteroides ya que te permite instalar temas, plugins y muchas funcionalidades que te harán la vida más fácil. Para instalarlo solo necesitas ejecutar este comando en tu terminal y el script de instalación hará el resto:
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+Pacman
+sudo apt install Pacman
+
+Instalar tema
+curl -sS https://starship.rs/install.sh | sh
+
+Implementar linea de codigo al final de .zshrc
+eval "$(starship init zsh)"
