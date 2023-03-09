@@ -16,3 +16,14 @@ curl -sS https://starship.rs/install.sh | sh
 
 Implementar linea de codigo al final de .zshrc
 eval "$(starship init zsh)"
+
+-------
+
+Instalr en tema
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+Implementar en .zshrc
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+Configurar
+p10k configure
